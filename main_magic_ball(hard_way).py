@@ -1,4 +1,5 @@
 import random
+import time
 
 answers = ["Бесспорно", "Мне кажется - да", "Пока неясно, попробуй снова",
            "Даже не думай",
@@ -32,6 +33,8 @@ def game():
     while True:
         print('Ты можешь задать свой вопрос:')
         _ = input()
+        print("Думаю......")
+        time.sleep(3)
         print(f'О, на этот вопрос я знаю ответ: {random.choice(answers)}....')
         if not user_again():
             break
