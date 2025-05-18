@@ -34,7 +34,7 @@ if symbOn == 'y':
 
 def generate_password (length, chars):
     password = ''
-    for j in range (length):
+    for i in range (length):
         password += random.choice(chars)
     print(password)
 
